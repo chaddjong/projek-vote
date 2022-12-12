@@ -1,5 +1,5 @@
 import React from "react";
-import Arrow from "../image/Arrow.png";
+import Arrow from "../img/Arrow.png";
 
 export default function Desktop() {
   return (
@@ -21,7 +21,7 @@ export default function Desktop() {
             <input
               type="text"
               placeholder="Token"
-              class="block h-[7.6vh] w-[100%] rounded-xl placeholder:pl-4 text-[17px] font-medium"
+              class="block h-[7.8vh] w-[100%] rounded-xl placeholder:pl-4 text-[17px] font-medium"
             ></input>
             <button type="submit" class="h-[5vh] w-[50px]">
               <img src={Arrow} class="h-[5vh] w-[100%] pr-2 "></img>
