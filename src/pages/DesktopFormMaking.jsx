@@ -83,6 +83,11 @@ export default function FormMaking() {
           <img src={Add} class="h-[6vh] w-[8%]" />
         </button>
       </div>
+      <div class="h-[5vh] w-[30%] flex justify-start items-center">
+        <button class="h-[5vh] w-[22%] mt-4 bg-[#D9D9D9] rounded-lg">
+          Done
+        </button>
+      </div>
     </body>
   );
 }
