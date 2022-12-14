@@ -1,4 +1,5 @@
 import React from "react";
+import DesktopFormMaking from "./pages/DesktopFormMaking";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import { faRoute } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +9,7 @@ import Testing from "./pages/flextest";
 function App() {
   return (
     <div className="App">
-      {/* <HomePage /> */}
+      <HomePage />
       {/* <LoginPage /> */}
       {/* <Testing /> */}
     </div>

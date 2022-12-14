@@ -1,6 +1,9 @@
 -slicing lagi asw
 -conditional rendering
 -media query
+-tambah gambar
+-tambah option 
+-tambaah card
 -konsul dengan richard
 
 	

@@ -26,7 +26,7 @@ export default function FormMaking() {
         <input
           type="text"
           placeholder="Untitled Question"
-          class="h-[4.5vh] w-[85%] text-2xl ml-4 mt-5 border-b-2 border-black bg-transparent"
+          class="h-[4.5vh] w-[85%] text-2xl ml-4 mt-5 border-b-2 border-black bg-transparent "
         />
         <p class="text-[#FF4B4B] ml-4 text-[14px] mt-1 font-inter">
           This field needs to be filled
