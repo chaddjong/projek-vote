@@ -1,5 +1,6 @@
 import React from "react";
 import Delete from "../img/delete.svg";
+import Option from "../components/Option"
 
 function QuestionCard() {
   return (
@@ -21,7 +22,11 @@ function QuestionCard() {
           Add image
         </button>
       </div>
-      <div className="flex justify-center items-center"></div>
+      <Option />
+      <Option />
+      <button className="flex w-max">
+        add option
+      </button>
     </div>
   );
 }
