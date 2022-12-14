@@ -1,0 +1,6 @@
+-slicing lagi asw
+-conditional rendering
+-media query
+-konsul dengan richard
+
+	

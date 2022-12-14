@@ -1,7 +1,7 @@
 import React from "react";
 export default function Share() {
   return (
-    <div className="absolute h-[100vh] w-[100%] flex flex-col justify-center items-center bg-[#d9d9d9]">
+    <div className="absolute h-[100vh] w-[100%] flex flex-col justify-center items-center z-10">
       <div class="bg-white h-auto w-[25%] rounded-lg pb-10">
         <p class="text-2xl text-black font-inter m-5 mt-8 ">Share Form as:</p>
         <label class="inline-flex items-start w-[95%]">
