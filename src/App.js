@@ -12,6 +12,7 @@ function App() {
       <HomePage />
       {/* <LoginPage /> */}
       {/* <Testing /> */}
+      <MobileFormMaking />
     </div>
   );
 }
