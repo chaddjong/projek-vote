@@ -5,13 +5,15 @@ import HomeMenu from "./components/HomeMenu";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import { faRoute } from "@fortawesome/free-solid-svg-icons";
+import MobileFormMaking from "./pages/MobileFormMaking";
+import Testing from "./pages/flextest";
 
 function App() {
   return (
     <div className="App">
-      {/* <DesktopFormMaking /> */}
-      <HomePage />
+      <MobileFormMaking />  
       {/* <LoginPage /> */}
+      {/* <Testing /> */}
     </div>
   );
 }
