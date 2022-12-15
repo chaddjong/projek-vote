@@ -9,10 +9,9 @@ import Testing from "./pages/flextest";
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <MobileFormMaking />
       {/* <LoginPage /> */}
       {/* <Testing /> */}
-      <MobileFormMaking />
     </div>
   );
 }

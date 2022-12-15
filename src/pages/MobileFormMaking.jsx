@@ -7,18 +7,20 @@ import NextArrow from "../img/arrow_forward.svg";
 
 function MobileFormMaking() {
   return (
-    <body className="bg-[#D9D9D9] h-[100%] pb-4">
-      <div className="flex justify-end items-end w-[100%] h-[100%] fixed z-10 p-10">
-        <button className="bg-[#EBEBEB] p-5 rounded-full shadow-[0_1.5px_7.3px_3.3px_rgba(0,0,0,0.25)]">
-          <img src={NextArrow} />
-        </button>
+    <body className="bg-[#D9D9D9] h-[100%] w-[100%] pb-4">
+      <div className="flex justify-end items-end w-[100%] h-[100%] p-10">
+        <div class=" w-[4.3%] h-[8vh]">
+          <button className="h-[8vh] w-[4.2%] bg-[#EBEBEB] mt-[80vh] rounded-full shadow-[0_1.5px_7.3px_3.3px_rgba(0,0,0,0.25)] fixed z-10">
+            <img src={NextArrow} />
+          </button>
+        </div>
       </div>
       <div>
         <div className="flex flex-col justify-center items-center w-full gap-5">
-          <div className="flex flex-col bg-white w-full h-44 rounded-b-2xl">
+          <div className="flex flex-col  bg-white w-full h-44 rounded-b-2xl">
             <div>
-              <button className="w-[30px] h-[30px] mt-[40px] ml-4">
-                <img src={BackArrow} />
+              <button class="h-[4vh] w-[2%]">
+                <img src={BackArrow} class="h-[4vh] w-[100%]" />
               </button>
             </div>
             <div className="mt-5 ml-5">

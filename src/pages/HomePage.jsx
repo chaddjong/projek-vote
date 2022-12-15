@@ -28,15 +28,21 @@ function HomePage() {
       </div>
       <div className="max-[1024px]:hidden">
         <div className="flex flex-col justify-center items-center">
-          <div class="flex justify-start items-start h-[80vh] w-[65%] border-[1px] border-black my-16 shadow-sm shadow-black">
+          <div class="flex justify-start items-start h-[100vh] w-[100%]">
             <div class="flex flex-col justify-evenly items-center h-[100%] w-[50%]">
-              <h1 class="font-inter text-4xl text-center text-[#434343]">
+              <h1 class="font-inter text-5xl text-center text-[#434343]">
                 WELCOME BACK <br></br> USER
               </h1>
-              <button class="h-[100px] w-[80%]  bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300">
+              <button
+                id="btn_Crt"
+                class="h-[18vh] w-[80%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
+              >
                 Create Form
               </button>
-              <button class="h-[100px] w-[80%]  bg-[#D9D9D9] rounded-md font-inter text-[24px] text-center hover:bg-orange-300">
+              <button
+                id="btn_SeeForm"
+                class="h-[18vh] w-[80%]  bg-[#D9D9D9] rounded-md font-inter text-[24px] text-center hover:bg-orange-300 active:bg-orange-400"
+              >
                 See Form <br></br> Responds
               </button>
             </div>
@@ -47,7 +53,7 @@ function HomePage() {
                   placeholder="Token"
                   class="block h-[7.7vh] w-[100%] rounded-xl placeholder:pl-4 text-[17px] font-medium"
                 ></input>
-                <button type="submit" class="h-[5vh] w-[50px]">
+                <button id="btn_Src" type="submit" class="h-[5vh] w-[50px]">
                   <img src={Arrow} class="h-[5vh] w-[100%] pr-2 "></img>
                 </button>
               </form>

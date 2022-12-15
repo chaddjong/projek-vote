@@ -16,7 +16,7 @@ function LoginPage() {
             <img src={background} alt="background-img" />
           </div>
           <div className="flex flex-col justify-center items-center bg-[#D9D9D9] w-[200px] h-[50px] rounded-[10px] lg:hidden">
-            <button className="font-inter font-bold text-[25px]">
+            <button id="btn_Log" className="font-inter font-bold text-[25px]">
               Login Here
             </button>
           </div>
@@ -29,14 +29,17 @@ function LoginPage() {
       </div>
       <div class="max-[1024px]:hidden">
         <div className=" flex flex-col justify-center items-center">
-          <div className="flex justify-start items-start h-[80vh] w-[65%] border-[1px] border-black my-16 shadow-sm shadow-black">
+          <div className="flex justify-start items-start h-[100vh] w-[100%]">
             <img src={background} class="bg-[#FFB546] h-[100%] w-[50%]" />
             <div class="flex flex-col justify-evenly items-center h-[100%] w-[50%]">
               <img src={Diamond} class="h-[80px] w-[100px] "></img>
               <h1 class="font-inter font-bold text-[4.8vh] text-center text-[#434343]">
                 WELCOME TO <br></br> UNKLAB FORMS
               </h1>
-              <button class="h-[6vh] w-[40%] bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300">
+              <button
+                id="btn_Log"
+                class="h-[6vh] w-[40%] bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300 text-2xl active:bg-orange-400"
+              >
                 Login Here
               </button>
             </div>
