@@ -17,10 +17,10 @@ function LoginPage() {
             <img src={background} alt="background-img" />
           </div>
           <div className="flex flex-col justify-center items-center lg:hidden">
-            <Link to={"/home"}>
+            <Link to="/home">
               <button
                 id="btn_Log"
-                className="font-inter font-bold text-[25px] bg-[#D9D9D9] w-[200px] h-[50px] rounded-[10px]"
+                className="flex justify-center items-center font-inter font-bold text-[25px] bg-[#D9D9D9] w-[200px] h-[50px] rounded-[10px]"
               >
                 Login Here
               </button>
@@ -39,7 +39,7 @@ function LoginPage() {
             <img src={background} class="bg-[#FFB546] h-[100%] w-[50%]" />
             <div class="flex flex-col justify-evenly items-center h-[100%] w-[50%]">
               <img src={Diamond} class="h-[80px] w-[100px] "></img>
-              <h1 class="font-inter font-bold text-[4.8vh] text-center text-[#434343]">
+              <h1 class="font-inter font-bold text-[8vh] text-center text-[#434343]">
                 WELCOME TO <br></br> UNKLAB FORMS
               </h1>
               <Link to={"/home"}>
