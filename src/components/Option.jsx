@@ -15,7 +15,9 @@ export default function Option() {
             Option 2
         </label> */}
         <input type="radio" id="option" value="option" name="option"></input>
-        <label for="option">option</label>
+        <label for="option" className="lg:text-xl">
+          option
+        </label>
         <form className=" flex justify-end items-center w-[100%] gap-5">
           <button>
             <img src={AddPhoto} />
