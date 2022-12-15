@@ -5,17 +5,16 @@ import HomePage from "./pages/HomePage";
 import { faRoute } from "@fortawesome/free-solid-svg-icons";
 import MobileFormMaking from "./pages/MobileFormMaking";
 import Testing from "./pages/flextest";
-import { BrowserRouter, Route } from "react-router-dom";
-import { Router } from "express";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Router>
+      <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/form-making" element={<MobileFormMaking />} />
-      </Router>
+      </Routes>
     </BrowserRouter>
   );
 }
