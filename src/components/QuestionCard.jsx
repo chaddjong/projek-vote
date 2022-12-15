@@ -24,7 +24,7 @@ function QuestionCard() {
       </div>
       <Option />
       <Option />
-      <button className="flex w-max">
+      <button className="flex w-max text-[#898989] ml-1">
         add option
       </button>
     </div>

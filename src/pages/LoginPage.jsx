@@ -1,5 +1,6 @@
 import React from "react";
 import background from "../img/image 1.svg";
+import { Link } from "react-router-dom";
 import Diamond from "../img/diamond.png";
 
 function LoginPage() {
@@ -15,10 +16,15 @@ function LoginPage() {
           <div className="top-[150px]">
             <img src={background} alt="background-img" />
           </div>
-          <div className="flex flex-col justify-center items-center bg-[#D9D9D9] w-[200px] h-[50px] rounded-[10px] lg:hidden">
-            <button id="btn_Log" className="font-inter font-bold text-[25px]">
-              Login Here
-            </button>
+          <div className="flex flex-col justify-center items-center lg:hidden">
+            <Link to={"/home"}>
+              <button
+                id="btn_Log"
+                className="font-inter font-bold text-[25px] bg-[#D9D9D9] w-[200px] h-[50px] rounded-[10px]"
+              >
+                Login Here
+              </button>
+            </Link>
           </div>
           <div className="pt-[10px] lg:hidden">
             <p className="font-inter">
