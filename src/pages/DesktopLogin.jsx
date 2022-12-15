@@ -4,7 +4,7 @@ import diamond from "../image/diamond.png";
 
 export default function DeskstopLogin() {
   return (
-    <body className=" flex flex-col justify-center items-center">
+    <div className=" flex flex-col justify-center items-center">
       <div className="flex justify-start items-start h-[80vh] w-[65%] border-[1px] border-black my-16 shadow-sm shadow-black">
         <img src={Img} class="bg-[#FFB546] h-[100%] w-[50%]" />
         <div class="flex flex-col justify-evenly items-center h-[100%] w-[50%]">
@@ -17,6 +17,6 @@ export default function DeskstopLogin() {
           </button>
         </div>
       </div>
-    </body>
+    </div>
   );
 }

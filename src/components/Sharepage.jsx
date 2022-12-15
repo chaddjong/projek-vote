@@ -10,7 +10,7 @@ export default function Share() {
             Public Form <br />
             <p class="font-inter text-[10px] text-black opacity-80">
               Public forms will be shown at Home Menu but still can be find by
-              entering Token number.
+              entering Token number. 
             </p>
           </span>
         </label>
