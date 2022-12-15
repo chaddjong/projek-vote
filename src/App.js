@@ -8,11 +8,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <Router>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/form-making" element={<MobileFormMaking />} />
-      </Routes>
+      </Router>
     </BrowserRouter>
   );
 }
