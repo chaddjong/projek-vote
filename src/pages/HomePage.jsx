@@ -61,10 +61,10 @@ function HomePage() {
               <h1 class="font-inter text-5xl text-center text-[#434343]">
                 WELCOME BACK <br></br> USER
               </h1>
-              <Link to={"/form-making"}>
+              <Link to={"/form-making"} class="h-[18vh] w-[80%]">
                 <button
                   id="btn_Crt"
-                  class="h-[18vh] w-[80%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
+                  class="h-[18vh] w-[100%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
                 >
                   Create Form
                 </button>

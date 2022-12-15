@@ -2,8 +2,7 @@ import React from "react";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import MobileFormMaking from "./pages/MobileFormMaking";
-import { faRoute } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter, Routes, Route } from "react-router-dom";  
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import Delete from "../img/delete.svg";
-import Option from "../components/Option"
+import Option from "../components/Option";
 
 function QuestionCard() {
   return (
-    <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4">
+    <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4 lg:bg-[#d9d9d9] mt-4">
       <button className="ml-[93%] mb-[11.21px]">
         <img src={Delete} />
       </button>
@@ -24,9 +24,7 @@ function QuestionCard() {
       </div>
       <Option />
       <Option />
-      <button className="flex w-max text-[#898989] ml-1">
-        add option
-      </button>
+      <button className="flex w-max text-[#898989] ml-1">add option</button>
     </div>
   );
 }
