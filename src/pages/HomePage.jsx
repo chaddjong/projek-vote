@@ -82,7 +82,7 @@ function HomePage() {
                   class="block h-[7.7vh] w-[100%] rounded-xl placeholder:pl-4 text-[17px] font-medium"
                 ></input>
                 <button id="btn_Src" type="submit" class="h-[5vh] w-[50px]">
-                  <img src={Arrow} class="h-[5vh] w-[100%] pr-2 "></img>
+                  <img src={NextArrow} class="h-[5vh] w-[100%] pr-2 "></img>
                 </button>
               </form>
               {/* <h1 class="text-[25px] font-normal my-auto mx-auto opacity-30 font-inter"> 

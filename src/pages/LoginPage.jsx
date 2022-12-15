@@ -42,12 +42,11 @@ function LoginPage() {
               <h1 class="font-inter font-bold text-[4.8vh] text-center text-[#434343]">
                 WELCOME TO <br></br> UNKLAB FORMS
               </h1>
-              <button
-                id="btn_Log"
-                class="h-[6vh] w-[40%] bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300 text-2xl active:bg-orange-400"
-              >
-                Login Here
-              </button>
+              <Link to={"/home"} className="flex justify-center items-center h-[6vh] w-[40%] bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300 text-2xl active:bg-orange-400">
+                <button id="btn_Log">
+                  Login Here
+                </button>
+              </Link>
             </div>
           </div>
         </div>
