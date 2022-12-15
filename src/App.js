@@ -9,13 +9,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-<<<<<<< HEAD
-    <div className="App">
-      <MobileFormMaking />
-      {/* <LoginPage /> */}
-      {/* <Testing /> */}
-    </div>
-=======
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginPage />} />
@@ -23,7 +16,6 @@ function App() {
         <Route path="/form-making" element={<MobileFormMaking />} />
       </Routes>
     </BrowserRouter>
->>>>>>> 4d717d673fe37fd0c52efd457ecd3f4fd18deed2
   );
 }
 
