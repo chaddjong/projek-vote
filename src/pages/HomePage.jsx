@@ -61,12 +61,14 @@ function HomePage() {
               <h1 class="font-inter text-5xl text-center text-[#434343]">
                 WELCOME BACK <br></br> USER
               </h1>
-              <button
-                id="btn_Crt"
-                class="h-[18vh] w-[80%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
-              >
-                Create Form
-              </button>
+              <Link to={"/form-making"}>
+                <button
+                  id="btn_Crt"
+                  class="h-[18vh] w-[80%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
+                >
+                  Create Form
+                </button>
+              </Link>
               <button
                 id="btn_SeeForm"
                 class="h-[18vh] w-[80%]  bg-[#D9D9D9] rounded-md font-inter text-[24px] text-center hover:bg-orange-300 active:bg-orange-400"
@@ -82,7 +84,7 @@ function HomePage() {
                   class="block h-[7.7vh] w-[100%] rounded-xl placeholder:pl-4 text-[17px] font-medium"
                 ></input>
                 <button id="btn_Src" type="submit" class="h-[5vh] w-[50px]">
-                  <img src={Arrow} class="h-[5vh] w-[100%] pr-2 "></img>
+                  <img src={NextArrow} class="h-[5vh] w-[100%] pr-2 "></img>
                 </button>
               </form>
               {/* <h1 class="text-[25px] font-normal my-auto mx-auto opacity-30 font-inter"> 

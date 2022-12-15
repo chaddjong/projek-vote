@@ -4,7 +4,7 @@ import BackArrow from "../img/arrow_back.svg";
 import Add from "../img/add.svg";
 import NextArrow from "../img/arrow_forward.svg";
 // import "./bgform.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function MobileFormMaking() {
   return (
