@@ -8,16 +8,16 @@ import MakingToken from "./pages/DesktopMakingToken";
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<LoginPage />} />
-    //     <Route path="/home" element={<HomePage />} />
-    //     <Route path="/form-making" element={<MobileFormMaking />} />
-    //   </Routes>
-    // </BrowserRouter>
-    <div>
-      <MakingToken />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/form-making" element={<MobileFormMaking />} />
+      </Routes>
+    </BrowserRouter>
+    // <div>
+    //   <MakingToken />
+    // </div>
   );
 }
 
