@@ -1,13 +1,26 @@
-import React from "react";
-import Delete from "../img/delete.svg";
+import React, { useState } from "react";
 import Option from "../components/Option";
-
+import Close from "../img/close.svg";
+import AddPhoto from "../img/addphoto.svg";
 function QuestionCard() {
+  const [val, setVal] = useState([]);
+  const handleAdd = () => {
+    const abc = [...val, []];
+    setVal(abc);
+  };
+  const handleChange = (onChangevalue, i) => {
+    const inputdata = [...val];
+    inputdata[i] = onChangevalue.target.value;
+    setVal(inputdata);
+  };
+  const handleDelete = (i) => {
+    const deletVal = [...val];
+    deletVal.splice(i, 1);
+    setVal(deletVal);
+  };
+  console.log(val, "data-");
   return (
     <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4 mt-4">
-      <button className="ml-[93%] mb-[11.21px] lg:ml-[97%] sm:ml-[95%]">
-        <img src={Delete} />
-      </button>
       <input
         id="question"
         placeholder="Untitled question"
@@ -22,9 +35,25 @@ function QuestionCard() {
           Add image
         </button>
       </div>
-      <Option />
-      <Option />
-      <button className="flex w-max text-[#898989] ml-1 lg:text-xl">
+      {val.map((data, i) => {
+        return (
+          <div className="flex items-center w-[95%] h-max gap-5 mb-5">
+            <Option onChange={(e) => handleChange(e, i)} />
+            <form className=" flex justify-end items-center w-[100%] gap-5">
+              <button class="-mt-[2vh]">
+                <img src={AddPhoto} />
+              </button>
+              <button onClick={() => handleDelete(i)} class="-mt-[2vh]">
+                <img src={Close} />
+              </button>
+            </form>
+          </div>
+        );
+      })}
+      <button
+        onClick={() => handleAdd()}
+        className="flex w-max text-[#898989] ml-1 lg:text-xl"
+      >
         add option
       </button>
     </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import AddPhoto from "../img/addphoto.svg";
-import Close from "../img/close.svg";
 
 export default function Option() {
   return (
@@ -18,14 +16,6 @@ export default function Option() {
         <label for="option" className="lg:text-xl">
           option
         </label>
-        <form className=" flex justify-end items-center w-[100%] gap-5">
-          <button>
-            <img src={AddPhoto} />
-          </button>
-          <button>
-            <img src={Close} />
-          </button>
-        </form>
       </div>
     </div>
   );
