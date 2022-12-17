@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Close from "../img/close.svg";
 
-export default function Share() {
+export default function Share({ closeModal }) {
   const [modal, setModal] = useState(true);
 
   const toggleModal = () => {
@@ -11,7 +11,7 @@ export default function Share() {
   return (
     <div className="relative">
       <div className="absolute right-7 top-4">
-        <button onClick={toggleModal}>
+        <button onClick={() => closeModal(false)}>
           <img src={Close} className="w-[4vw]" />
         </button>
       </div>
@@ -27,8 +27,8 @@ export default function Share() {
               name="form"
               className="mr-[2vw]"
             />
-            <span>Public Form</span>
-            <p>
+            <span className="text-[4.5vw]">Public Form</span>
+            <p className="text-[3.5vw] ml-[6vw]">
               Public forms will be shown at Home Menu but still can be find by
               entering Token number.
             </p>
@@ -41,8 +41,20 @@ export default function Share() {
               className="mr-[2vw]"
               checked
             />
-            <span>Private Form</span>
+            <span className="text-[4.5vw]">Private Form</span>
+            <p className="text-[3.5vw] ml-[6vw]">
+              Private forms will not be shown at Home Menu, instead user can
+              find it by entering Token number by sharing it
+            </p>
           </label>
+        </div>
+        <div>
+          <select id="share-period">
+            <option value="oneweek" selected>
+              One Week
+            </option>
+            <option value="24hours">24 hours</option>
+          </select>
         </div>
       </div>
     </div>

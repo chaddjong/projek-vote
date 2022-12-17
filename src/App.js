@@ -5,6 +5,7 @@ import MobileFormMaking from "./pages/MobileFormMaking";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FormMaking from "./pages/DesktopFormMaking";
 import MakingToken from "./pages/DesktopMakingToken";
+import Testing from "./pages/flextest";
 
 function App() {
   return (
@@ -15,9 +16,6 @@ function App() {
         <Route path="/form-making" element={<MobileFormMaking />} />
       </Routes>
     </BrowserRouter>
-    // <div>
-    //   <MakingToken />
-    // </div>
   );
 }
 

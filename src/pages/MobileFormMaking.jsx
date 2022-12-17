@@ -10,11 +10,11 @@ import { Link } from "react-router-dom";
 // import "./bgform.css";
 
 function MobileFormMaking() {
-  const [modal, setModal] = useState(false);
+  const [openmodal, setOpenModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
+  // const toggleModal = () => {
+  //   setModal(!openmodal);
+  // };
 
   const [val, setVal] = useState([]);
   const handleAdd = () => {
@@ -37,15 +37,17 @@ function MobileFormMaking() {
       <div className="flex justify-end items-end w-[100%] h-[100%]">
         <div class="mr-20 lg:hidden">
           <button
-            onClick={toggleModal}
+            onClick={() => {
+              setOpenModal(true);
+            }}
             className=" bg-[#EBEBEB] p-5 mt-[89vh] rounded-full shadow-[0_1.5px_7.3px_3.3px_rgba(0,0,0,0.25)] fixed z-20 active:bg-orange-400"
           >
             <img src={NextArrow} />
           </button>
-          {modal && (
+          {openmodal && (
             <div className="bg-[#0000004a] fixed top left-0 right-0 bottom-0 w-[100vw] h-[100vh] flex justify-center items-center">
               <div className="bg-white w-[83vw] h-[35vh] rounded-[13px]">
-                <Share />
+                <Share closeModal={setOpenModal} />
               </div>
             </div>
           )}
