@@ -32,7 +32,13 @@ function QuestionCard() {
           type="file"
           className="text-[3.5vw] bg-[#D9D9D9] px-[14px] py-[10px] rounded-[5px] lg:text-xl sm:text-[18px] md:text-[20px]"
         >
-          Add image
+          <input
+            type="file"
+            id="file"
+            className="w-auto h-auto hidden"
+            accept="image/*"
+          />
+          <label for="file">Add image</label>
         </button>
       </div>
       {val.map((data, i) => {

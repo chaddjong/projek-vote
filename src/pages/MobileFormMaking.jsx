@@ -46,7 +46,7 @@ function MobileFormMaking() {
           </button>
           {openmodal && (
             <div className="bg-[#0000004a] fixed top left-0 right-0 bottom-0 w-[100vw] h-[100vh] flex justify-center items-center">
-              <div className="bg-white w-[83vw] h-[35vh] rounded-[13px]">
+              <div className="">
                 <Share closeModal={setOpenModal} />
               </div>
             </div>
@@ -73,6 +73,7 @@ function MobileFormMaking() {
               ></input>
             </div>
           </div>
+          <QuestionCard />
           {val.map((data, i) => {
             return (
               <div className="flex flex-col w-[100%] justify-center items-center ">
@@ -95,9 +96,21 @@ function MobileFormMaking() {
           </div>
         </div>
         <div class="h-[5vh] w-[30%] flex justify-start items-center max-[1024px]:hidden">
-          <button class="h-[5vh] w-[22%] mt-4 bg-white rounded-lg ml-[5%] hover:bg-orange-300 active:bg-orange-400">
+          <button
+            onClick={() => {
+              setOpenModal(true);
+            }}
+            class="h-[5vh] w-[22%] mt-4 bg-white rounded-lg ml-[5%] hover:bg-orange-300 active:bg-orange-400"
+          >
             Done
           </button>
+          {openmodal && (
+            <div className="bg-[#0000004a] fixed top left-0 right-0 bottom-0 w-[100vw] h-[100vh] flex justify-center items-center">
+              <div className="">
+                <Share closeModal={setOpenModal} />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </body>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Close from "../img/close.svg";
+import Clock from "../img/clock.png";
 
 export default function Share({ closeModal }) {
   const [modal, setModal] = useState(true);
@@ -9,26 +10,26 @@ export default function Share({ closeModal }) {
   };
 
   return (
-    <div className="relative">
-      <div className="absolute right-7 top-4">
-        <button onClick={() => closeModal(false)}>
-          <img src={Close} className="w-[4vw]" />
-        </button>
-      </div>
-      <div className="flex flex-col justify-start">
-        <p className="font-inter font-bold text-[5vw] mt-[3vh] ml-[5vw]">
+    <div className="relative flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[80%] lg:h-[94vh] md:w-[65%] pb-2">
+        <div className="absolute right-[15%] top-4 md:right-[20%] md:top-6">
+          <button onClick={() => closeModal(false)}>
+            <img src={Close} className="w-[4vw] md:w-[3vw]" />
+          </button>
+        </div>
+        <p className="font-inter font-bold text-[5vw] mt-[3vh] ml-[5vw] md:text-[4vw]">
           Share Form as:
         </p>
-        <div className="flex flex-col justify-start mt-[2vh] ml-[5vw]">
-          <label className="w-[80vw]">
+        <div className="flex flex-col justify-start mt-[2vh] ml-[3vw]">
+          <label className="w-[75vw] md:w-[62vw] ">
             <input
               type="radio"
               value="public"
               name="form"
-              className="mr-[2vw]"
+              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
             />
-            <span className="text-[4.5vw]">Public Form</span>
-            <p className="text-[3.5vw] ml-[6vw]">
+            <span className="text-[4.5vw] md:text-[3vw]">Public Form</span>
+            <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
               Public forms will be shown at Home Menu but still can be find by
               entering Token number.
             </p>
@@ -38,23 +39,42 @@ export default function Share({ closeModal }) {
               type="radio"
               value="private"
               name="form"
-              className="mr-[2vw]"
+              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
               checked
             />
-            <span className="text-[4.5vw]">Private Form</span>
-            <p className="text-[3.5vw] ml-[6vw]">
+            <span className="text-[4.5vw] md:text-[3vw]">Private Form</span>
+            <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
               Private forms will not be shown at Home Menu, instead user can
               find it by entering Token number by sharing it
             </p>
           </label>
         </div>
-        <div>
-          <select id="share-period">
-            <option value="oneweek" selected>
-              One Week
-            </option>
-            <option value="24hours">24 hours</option>
-          </select>
+        <div className="w-[100%] flex flex-col items-center justify-end mt-5">
+          <div class="w-[60vw] bg-[#d9d9d9] rounded-full py-[1vw] flex items-center">
+            <img
+              src={Clock}
+              className="p-[1.5vw] bg-white rounded-full ml-2 w-[15%] h-[15%] "
+            />
+            <div class="w-[60%] ml-[4%] ">
+              <select
+                id="share-period"
+                className="text-[3vw] md:text-[2.5vw] w-[100%]  bg-[#D9D9D9]"
+              >
+                <option value="oneweek" selected>
+                  One Week
+                </option>
+                <option value="24hours">24 hours</option>
+              </select>
+              <p className="text-[2vw] md:text-[1.5vw]">
+                This form will be expired in One week
+              </p>
+            </div>
+          </div>
+          <div className="w-[95%] flex justify-end mb-4">
+            <button className="h-[5vh] w-[20%] bg-[#d9d9d9] mt-5 text-[1.6vw] rounded-lg active:bg-slate-500">
+              Share Form
+            </button>
+          </div>
         </div>
       </div>
     </div>
