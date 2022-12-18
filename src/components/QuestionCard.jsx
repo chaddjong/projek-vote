@@ -20,12 +20,12 @@ function QuestionCard() {
   };
   console.log(val, "data-");
   return (
-    <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4 mt-4">
+    <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4">
       <input
         id="question"
         placeholder="Untitled question"
         className="border-black border-b-[1.46px] focus:outline-none placeholder-black text-xl pb-2 lg:text-3xl"
-        required
+        requiredhhin
       ></input>
       <div className="flex flex-start mt-[1em] ml-[0.5em] mb-4">
         <button

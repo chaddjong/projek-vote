@@ -77,12 +77,12 @@ function MobileFormMaking() {
           {val.map((data, i) => {
             return (
               <div className="flex flex-col w-[100%] justify-center items-center ">
-                <QuestionCard onChange={(e) => handleChange(e, i)} />
-                <div class="h-auto">
+                <div class="h-auto relative top-10 left-[44%]">
                   <button onClick={() => handleDelete(i)} className="">
                     <img src={Delete} />
                   </button>
                 </div>
+                <QuestionCard onChange={(e) => handleChange(e, i)} />
               </div>
             );
           })}
