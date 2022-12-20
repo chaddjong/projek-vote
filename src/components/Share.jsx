@@ -11,7 +11,7 @@ export default function Share({ closeModal }) {
 
   return (
     <div className="relative flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[80%] lg:h-[94vh] md:w-[65%] pb-2">
+      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[85%] lg:h-[94vh] md:w-[65%] pb-2">
         <div className="absolute right-[15%] top-4 md:right-[20%] md:top-6">
           <button onClick={() => closeModal(false)}>
             <img src={Close} className="w-[4vw] md:w-[3vw]" />
@@ -28,7 +28,7 @@ export default function Share({ closeModal }) {
               name="form"
               className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
             />
-            <span className="text-[4.5vw] md:text-[3vw]">Public Form</span>
+            <span className="text-[4.5vw] md:text-[3vw] font-semibold">Public Form</span>
             <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
               Public forms will be shown at Home Menu but still can be find by
               entering Token number.
@@ -42,7 +42,7 @@ export default function Share({ closeModal }) {
               className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
               checked
             />
-            <span className="text-[4.5vw] md:text-[3vw]">Private Form</span>
+            <span className="text-[4.5vw] md:text-[3vw] font-semibold">Private Form</span>
             <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
               Private forms will not be shown at Home Menu, instead user can
               find it by entering Token number by sharing it

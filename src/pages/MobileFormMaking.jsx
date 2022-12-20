@@ -57,9 +57,11 @@ function MobileFormMaking() {
         <div className="flex flex-col justify-center items-center gap-5">
           <div className=" bg-white w-full h-44 rounded-b-2xl">
             <div>
-              <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2.5%] m-4">
-                <img src={BackArrow} class="h-[4vh] w-[100%]" />
-              </button>
+              <Link to="/home">
+                <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2.5%] m-4">
+                  <img src={BackArrow} class="h-[4vh] w-[100%]" />
+                </button>
+              </Link>
             </div>
             <div className="mt-5 ml-5">
               <input
@@ -73,6 +75,7 @@ function MobileFormMaking() {
               ></input>
             </div>
           </div>
+          <QuestionCard />
           <QuestionCard />
           {val.map((data, i) => {
             return (
