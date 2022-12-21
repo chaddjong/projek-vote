@@ -15,22 +15,22 @@ function QuestionCard() {
   };
   const handleDelete = (i) => {
     const deletVal = [...val];
-    deletVal.splice(i, 1);
+    deletVal.splice(i);
     setVal(deletVal);
   };
   console.log(val, "data-");
   return (
-    <div className="flex flex-col bg-white w-[97%] h-max rounded-xl p-4">
+    <div className="flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4">
       <input
         id="question"
         placeholder="Untitled question"
-        className="border-black border-b-[1.46px] focus:outline-none placeholder-black text-xl pb-2 lg:text-3xl"
+        className="border-black border-b-[1.46px] focus:outline-none placeholder-black text-xl pb-2 lg:text-1xl"
         requiredhhin
       ></input>
       <div className="flex flex-start mt-[1em] ml-[0.5em] mb-4">
         <button
           type="file"
-          className="text-[3.5vw] bg-[#D9D9D9] px-[14px] py-[10px] rounded-[5px] lg:text-xl sm:text-[18px] md:text-[20px]"
+          className="text-[3vw] bg-[#D9D9D9] px-[8px] py-[6px] rounded-[5px] lg:text-[16px] sm:text-[18px] md:text-[20px]"
         >
           <input
             type="file"

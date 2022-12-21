@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import MobileFormMaking from "./pages/MobileFormMaking";
@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/form-making" element={<MobileFormMaking />} />
+        <Route path="/making-token" element={<MakingToken />} />
       </Routes>
     </BrowserRouter>
   );

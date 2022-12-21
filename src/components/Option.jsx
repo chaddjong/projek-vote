@@ -13,8 +13,8 @@ export default function Option() {
             Option 2
         </label> */}
         <input type="radio" id="option" value="option" name="option"></input>
-        <label for="option" className="lg:text-xl">
-          option
+        <label for="option" className="lg:text-[18px]">
+          <input type="text" placeholder="option" className=" sm:w-[95%]" />
         </label>
       </div>
     </div>
