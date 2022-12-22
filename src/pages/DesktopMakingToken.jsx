@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function MakingToken() {
   return (
@@ -30,9 +31,9 @@ export default function MakingToken() {
           <button className="h-[8vh] w-[14%] bg-[#D9D9D9] rounded-lg mt-5">
             Copy
           </button>
-          <a href="#" className="mt-5">
+          <Link to={"/home"} className="mt-5">
             tap here to return to home page
-          </a>
+          </Link>
         </div>
       </div>
     </div>

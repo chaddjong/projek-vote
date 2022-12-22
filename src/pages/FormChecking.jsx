@@ -21,6 +21,12 @@ export default function FormChecking() {
         </div> */}
         <div>
           <ReportThumbnail />
+          <ReportThumbnail />
+          <ReportThumbnail />
+          <ReportThumbnail />
+          <ReportThumbnail />
+          <ReportThumbnail />
+          <ReportThumbnail />
         </div>
       </div>
     </div>
