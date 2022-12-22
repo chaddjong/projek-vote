@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FormMaking from "./pages/DesktopFormMaking";
 import MakingToken from "./pages/DesktopMakingToken";
 import Testing from "./pages/flextest";
+import FormChecking from "./pages/FormChecking";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/form-making" element={<MobileFormMaking />} />
+        <Route path="/form-checking" element={<FormChecking />} />
       </Routes>
     </BrowserRouter>
   );

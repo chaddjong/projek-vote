@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Option from "../components/Option";
 import Close from "../img/close.svg";
 import AddPhoto from "../img/addphoto.svg";
+
 function QuestionCard() {
   const [val, setVal] = useState([]);
   const handleAdd = () => {
