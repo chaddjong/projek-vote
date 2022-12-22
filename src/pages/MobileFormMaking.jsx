@@ -54,8 +54,8 @@ function MobileFormMaking() {
         </div>
       </div>
       <div>
-        <div className="flex flex-col justify-center items-center gap-5">
-          <div className=" bg-white w-full h-44 rounded-b-2xl">
+        <div className="flex flex-col justify-center items-center max-[1023px]:gap-5">
+          <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-6">
             <div>
               <Link to="/home">
                 <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2.5%] m-4">
@@ -63,10 +63,10 @@ function MobileFormMaking() {
                 </button>
               </Link>
             </div>
-            <div className="mt-5 ml-5">
+            <div className="mt-5 ml-5 lg:mt-8">
               <input
                 placeholder="Untitled form"
-                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-5xl"
+                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-2xl"
               ></input>
               <br></br>
               <input
@@ -89,8 +89,9 @@ function MobileFormMaking() {
               </div>
             );
           })}
-          <div class="bg-white  w-[97%] h-[18vh] rounded-2xl flex flex-col justify-center items-center">
+          <div class="bg-white lg:mt-6  w-[97%] lg:w-[29%] h-[18vh] rounded-2xl flex flex-col justify-center items-center">
             <button
+              id="btn_add"
               onClick={() => handleAdd()}
               class="w-[100%] h-[18vh] rounded-2xl flex flex-col justify-center items-center"
             >
@@ -98,12 +99,12 @@ function MobileFormMaking() {
             </button>
           </div>
         </div>
-        <div class="h-[5vh] w-[30%] flex justify-start items-center max-[1024px]:hidden">
+        <div class="h-[5vh] w-[100%] flex justify-start items-center max-[1023px]:hidden">
           <button
             onClick={() => {
               setOpenModal(true);
             }}
-            class="h-[5vh] w-[22%] mt-4 bg-white rounded-lg ml-[5%] hover:bg-orange-300 active:bg-orange-400"
+            class="h-[5vh] w-[8%] lg:mt-6 bg-white rounded-lg ml-[5%] lg:ml-[35.5%] hover:bg-orange-300 active:bg-orange-400"
           >
             Done
           </button>

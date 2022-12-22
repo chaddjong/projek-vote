@@ -8,10 +8,7 @@ export default function FormMaking() {
   return (
     <body className="flex flex-col justify-center items-center">
       <div class="h-[30vh] w-[30%] bg-zinc-200 rounded-b-2xl flex flex-col justify-start items-start">
-        <button
-          type="submit"
-          class="h-[2vh] w-[10%] mt-4 ml-2 hover:bg-orange-300 active:bg-orange-400"
-        >
+        <button type="submit" class="h-[2vh] w-[10%] mt-4 ml-2">
           <img src={Back} alt="p" class="h-[4vh] w-[70%] " />
         </button>
         <input

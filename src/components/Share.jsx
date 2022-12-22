@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Close from "../img/close.svg";
 import Clock from "../img/clock.png";
+import { Link } from "react-router-dom";
 
 export default function Share({ closeModal }) {
   const [modal, setModal] = useState(true);
@@ -11,8 +12,8 @@ export default function Share({ closeModal }) {
 
   return (
     <div className="relative flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[85%] lg:h-[94vh] md:w-[65%] pb-2">
-        <div className="absolute right-[15%] top-4 md:right-[20%] md:top-6">
+      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[85%] lg:h-[94vh] pb-2">
+        <div className="absolute right-[15%] top-4 md:right-[20%] md:top-6 lg:right-[12%] lg:top-3">
           <button onClick={() => closeModal(false)}>
             <img src={Close} className="w-[4vw] md:w-[3vw]" />
           </button>
@@ -70,11 +71,17 @@ export default function Share({ closeModal }) {
               </p>
             </div>
           </div>
-          <div className="w-[95%] flex justify-end mb-4">
-            <button className="h-[5vh] w-[20%] bg-[#d9d9d9] mt-5 text-[1.6vw] rounded-lg active:bg-slate-500">
-              Share Form
-            </button>
-          </div>
+          <Link to={"/making-token"}>
+            <div className="w-[95%] flex justify-end mb-4">
+              <button
+                id="rollButton"
+                className="w-[15vw] bg-[#d9d9d9] mt-5 text-[1.6vw] rounded-lg active:bg-slate-500 py-[1vw]"
+              >
+                Share Form
+              </button>
+              {/* <script src="./index.js"></script> */}
+            </div>
+          </Link>
         </div>
       </div>
     </div>

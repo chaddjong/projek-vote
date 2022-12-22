@@ -33,7 +33,7 @@ function LoginPage() {
           </div>
         </div>
       </div>
-      <div class="max-[1024px]:hidden">
+      <div class="max-[1023px]:hidden">
         <div className=" flex flex-col justify-center items-center">
           <div className="flex justify-start items-start h-[100vh] w-[100%]">
             <img src={background} class="bg-[#FFB546] h-[100%] w-[50%]" />
