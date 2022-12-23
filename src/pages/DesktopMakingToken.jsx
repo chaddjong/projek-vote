@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 export default function MakingToken() {
   return (
@@ -9,11 +10,13 @@ export default function MakingToken() {
             YOUR FORM <br /> HAS SUCCESFULLY BEEN MADE
           </p>
           <div className="font-semibold text-[#434343] text-4xl mt-[100px] flex">
-            <p>009870zx</p>
+            <p value="009870ZX">009870ZX</p>
           </div>
-          <button className="h-[8vh] w-[14%] bg-[#D9D9D9] rounded-lg mt-5">
-            Copy
-          </button>
+          <CopyToClipboard text="009870ZX">
+            <button className="h-[8vh] w-[14%] bg-[#D9D9D9] rounded-lg mt-5">
+              Copy
+            </button>
+          </CopyToClipboard>
           <a href="#" className="mt-5">
             tap here to return to home page
           </a>

@@ -66,12 +66,12 @@ function MobileFormMaking() {
             <div className="mt-5 ml-5 lg:mt-8">
               <input
                 placeholder="Untitled form"
-                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-2xl"
+                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-[2vw]"
               ></input>
               <br></br>
               <input
                 placeholder="add a description"
-                className="placeholder:text-black placeholder:font-normal placeholder:opacity-50 text-base leading-6 focus:outline-none ml-1 w-[95%]"
+                className="placeholder:text-black placeholder:font-normal placeholder:opacity-50 text-base leading-6 focus:outline-none ml-1 w-[95%] lg:text-[1vw]"
               ></input>
             </div>
           </div>

@@ -6,17 +6,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FormMaking from "./pages/DesktopFormMaking";
 import MakingToken from "./pages/DesktopMakingToken";
 import Testing from "./pages/flextest";
+import Success from "./pages/ResponseSuccess";
+import Warning from "./pages/ResponseWarning";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/form-making" element={<MobileFormMaking />} />
-        <Route path="/making-token" element={<MakingToken />} />
-      </Routes>
-    </BrowserRouter>
+    <Dashboard />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<LoginPage />} />
+    //     <Route path="/home" element={<HomePage />} />
+    //     <Route path="/form-making" element={<MobileFormMaking />} />
+    //     <Route path="/making-token" element={<MakingToken />} />
+    //   </Routes>
+    // </BrowserRouter>
   );
 }
 
