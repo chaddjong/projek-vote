@@ -33,7 +33,7 @@ function MobileFormMaking() {
   };
   console.log(val, "data-");
   return (
-    <body className="bg-[#D9D9D9] pb-5">
+    <body className="bg-[#D9D9D9] pb-5 body-back">
       <div className="flex justify-end items-end w-[100%] h-[100%]">
         <div class="mr-20 lg:hidden">
           <button
@@ -57,9 +57,9 @@ function MobileFormMaking() {
         <div className="flex flex-col justify-center items-center max-[1023px]:gap-5">
           <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-6">
             <div>
-              <Link to={"/home"}>
-                <button class="w-[5vw] sm:w-[3vw] lg:w-[2vw] m-4">
-                  <img src={BackArrow} class="" />
+              <Link to="/home">
+                <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2.5%] m-4">
+                  <img src={BackArrow} class="h-[4vh] w-[100%]" />
                 </button>
               </Link>
             </div>
@@ -76,15 +76,12 @@ function MobileFormMaking() {
             </div>
           </div>
           <QuestionCard />
+          <QuestionCard />
           {val.map((data, i) => {
             return (
-              <div className="flex flex-col w-[100%] justify-center items-center ">
-                <div class="h-auto relative top-10 left-[42%] lg:left-[12%]">
-                  <button
-                    id="btn_remove"
-                    onClick={() => handleDelete(i)}
-                    className=""
-                  >
+              <div className="flex flex-col w-[100%] justify-center items-center">
+                <div class="h-auto relative top-10 left-[44%]">
+                  <button onClick={() => handleDelete(i)} className="">
                     <img src={Delete} />
                   </button>
                 </div>

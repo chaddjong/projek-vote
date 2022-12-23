@@ -22,9 +22,11 @@ function HomePage() {
               </button>
             </form>
             <div className="flex flex-row justify-center items-center mt-[30px] gap-[13px]">
-              <button className="flex justify-center items-center bg-[#D9D9D9] w-[150px] h-[80px] rounded-[14.64px] font-inter font-[600] text-xl hover:bg-[#FFB546]">
-                <p>See Form Responds</p>
-              </button>
+              <Link to={"/form-checking"}>
+                <button className="flex justify-center items-center bg-[#D9D9D9] w-[150px] h-[80px] rounded-[14.64px] font-inter font-[600] text-xl hover:bg-[#FFB546]">
+                  <p>See Form Responds</p>
+                </button>
+              </Link>
               <Link to={"/form-making"}>
                 <button className="flex justify-center items-center bg-[#D9D9D9] w-[150px] h-[80px] rounded-[14.64px] font-inter font-[600] text-xl hover:bg-[#FFB546]">
                   <p>

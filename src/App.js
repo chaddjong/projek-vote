@@ -9,18 +9,19 @@ import Testing from "./pages/flextest";
 import Success from "./pages/ResponseSuccess";
 import Warning from "./pages/ResponseWarning";
 import Dashboard from "./pages/Dashboard";
+import FormChecking from "./pages/FormChecking";
 
 function App() {
   return (
-    <Dashboard />
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<LoginPage />} />
-    //     <Route path="/home" element={<HomePage />} />
-    //     <Route path="/form-making" element={<MobileFormMaking />} />
-    //     <Route path="/making-token" element={<MakingToken />} />
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/form-making" element={<MobileFormMaking />} />
+        <Route path="/form-checking" element={<FormChecking />} />
+        <Route path="/making-token" element={<MakingToken />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
