@@ -20,6 +20,7 @@ function App() {
         <Route path="/form-making" element={<MobileFormMaking />} />
         <Route path="/form-checking" element={<FormChecking />} />
         <Route path="/making-token" element={<MakingToken />} />
+        <Route path="/dashboard-report" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );

@@ -12,21 +12,13 @@ export default function Share({ closeModal }) {
 
   return (
     <div className="relative flex flex-col justify-center items-center">
-<<<<<<< HEAD
-      <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[80%] lg:h-[40vw] pb-2">
-=======
       <div className="flex flex-col justify-center items-start bg-white rounded-[13px] w-[85%] lg:h-[94vh] pb-2">
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
         <div className="absolute right-[15%] top-4 md:right-[20%] md:top-6 lg:right-[12%] lg:top-3">
           <button onClick={() => closeModal(false)}>
             <img src={Close} className="w-[4vw] md:w-[3vw]" />
           </button>
         </div>
-<<<<<<< HEAD
-        <p className="font-inter font-bold text-[5vw] mt-[3vh] ml-[5vw] md:text-[4vw] lg:text-[2.5vw] lg:ml-10">
-=======
         <p className="font-inter font-bold text-[5vw] mt-[3vh] ml-[5vw] md:text-[4vw]">
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
           Share Form as:
         </p>
         <div className="flex flex-col justify-start mt-[2vh] ml-[3vw]">
@@ -35,19 +27,12 @@ export default function Share({ closeModal }) {
               type="radio"
               value="public"
               name="form"
-<<<<<<< HEAD
-              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw] lg:w-[2vw] lg:h-[2vw] lg:ml-[3vw]"
-            />
-            <span className="text-[4.5vw] md:text-[3vw] lg:text-[2vw]">
-              Public Form
-            </span>
-            <p className="text-[3.5vw] md:text-[2.5vw] lg:text-[1vw] ml-[6vw] lg:ml-[9vw] lg:w-[100%]">
-=======
               className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
             />
-            <span className="text-[4.5vw] md:text-[3vw] font-semibold">Public Form</span>
+            <span className="text-[4.5vw] md:text-[3vw] font-semibold">
+              Public Form
+            </span>
             <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
               Public forms will be shown at Home Menu but still can be find by
               entering Token number.
             </p>
@@ -57,32 +42,20 @@ export default function Share({ closeModal }) {
               type="radio"
               value="private"
               name="form"
-<<<<<<< HEAD
-              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw] lg:w-[2vw] lg:h-[2vw] lg:ml-[3vw]"
-              checked
-            />
-            <span className="text-[4.5vw] md:text-[3vw] lg:text-[2vw]">
-              Private Form
-            </span>
-            <p className="text-[3.5vw] md:text-[2.5vw] lg:text-[1vw] ml-[6vw] lg:ml-[9vw] lg:w-[62.5%]">
-=======
               className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
               checked
             />
-            <span className="text-[4.5vw] md:text-[3vw] font-semibold">Private Form</span>
+            <span className="text-[4.5vw] md:text-[3vw] font-semibold">
+              Private Form
+            </span>
             <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
               Private forms will not be shown at Home Menu, instead user can
               find it by entering Token number by sharing it
             </p>
           </label>
         </div>
         <div className="w-[100%] flex flex-col items-center justify-end mt-5">
-<<<<<<< HEAD
-          <div class="w-[60vw] lg:w-[50vw] bg-[#EBEBEB] rounded-full py-[1vw] flex items-center">
-=======
           <div class="w-[60vw] bg-[#d9d9d9] rounded-full py-[1vw] flex items-center">
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
             <img
               src={Clock}
               className="p-[1.5vw] bg-white rounded-full ml-2 w-[15%] h-[15%] "
@@ -90,11 +63,7 @@ export default function Share({ closeModal }) {
             <div class="w-[60%] ml-[4%] ">
               <select
                 id="share-period"
-<<<<<<< HEAD
-                className="text-[3vw] md:text-[2.5vw] lg:text-[2vw] w-[60%]  bg-[#D9D9D9] flex flex-col justify-center items-start"
-=======
                 className="text-[3vw] md:text-[2.5vw] w-[100%]  bg-[#D9D9D9]"
->>>>>>> ff80623ccc2a399a19b2fb1a465dcfbc8e319933
               >
                 <option value="oneweek" selected className="lg:text-[1vw]">
                   One Week
