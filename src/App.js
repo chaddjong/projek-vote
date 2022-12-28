@@ -13,16 +13,18 @@ import FormChecking from "./pages/FormChecking";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/form-making" element={<MobileFormMaking />} />
-        <Route path="/form-checking" element={<FormChecking />} />
-        <Route path="/making-token" element={<MakingToken />} />
-        <Route path="/dashboard-report" element={<Dashboard />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<LoginPage />} />
+    //     <Route path="/home" element={<HomePage />} />
+    //     <Route path="/form-making" element={<MobileFormMaking />} />
+    //     <Route path="/form-checking" element={<FormChecking />} />
+    //     <Route path="/making-token" element={<MakingToken />} />
+    //     <Route path="/dashboard-report" element={<Dashboard />} />
+    //     <Route path="/response-confirmation" element={<Success />} />
+    //   </Routes>
+    // </BrowserRouter>
+    <Success />
   );
 }
 
