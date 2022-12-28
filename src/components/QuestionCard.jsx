@@ -21,7 +21,7 @@ function QuestionCard() {
   };
   console.log(val, "data-");
   return (
-    <div className="flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4">
+    <div className="flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4 lg:mb-5">
       <input
         id="question"
         placeholder="Untitled question"

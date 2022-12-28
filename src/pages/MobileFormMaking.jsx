@@ -55,10 +55,10 @@ function MobileFormMaking() {
       </div>
       <div>
         <div className="flex flex-col justify-center items-center max-[1023px]:gap-5">
-          <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-6">
+          <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-5">
             <div>
               <Link to="/home">
-                <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2.5%] m-4">
+                <button class="h-[4vh] w-[8%] sm:w-[5%] lg:w-[2vw] m-4">
                   <img src={BackArrow} class="h-[4vh] w-[100%]" />
                 </button>
               </Link>
@@ -75,12 +75,10 @@ function MobileFormMaking() {
               ></input>
             </div>
           </div>
-          <QuestionCard />
-          <QuestionCard />
           {val.map((data, i) => {
             return (
-              <div className="flex flex-col w-[100%] justify-center items-center">
-                <div class="h-auto relative top-10 left-[44%]">
+              <div className="flex flex-col w-[100%] justify-start items-center">
+                <div class="h-auto relative top-10 left-[12%]">
                   <button onClick={() => handleDelete(i)} className="">
                     <img src={Delete} />
                   </button>
@@ -89,7 +87,7 @@ function MobileFormMaking() {
               </div>
             );
           })}
-          <div class="bg-white lg:mt-6  w-[97%] lg:w-[29%] h-[18vh] rounded-2xl flex flex-col justify-center items-center">
+          <div class="bg-white  w-[97%] lg:w-[29%] h-[18vh] rounded-2xl flex flex-col justify-center items-center">
             <button
               id="btn_add"
               onClick={() => handleAdd()}

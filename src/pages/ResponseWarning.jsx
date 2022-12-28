@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function warning() {
   return (
     <body className="bg-white flex flex-col justify-center items-center h-[100vh] w-[100%]">
@@ -8,7 +9,9 @@ export default function warning() {
         <p>YOU CAN ONLY FILL</p>
         <p>THIS FORM ONCE</p>
         <br />
-        <button className=" underline">go back to home page</button>
+        <Link to="/home">
+          <button className=" underline">go back to home page</button>
+        </Link>
       </div>
     </body>
   );

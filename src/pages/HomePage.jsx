@@ -2,8 +2,13 @@ import React from "react";
 import NextArrow from "../img/arrow_forward.svg";
 import PublicFormThumbnail from "../components/PublicFormThumbnail";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function HomePage() {
+  const [data, setData] = React.useState([]);
+  axios.get("http://localhost:4000/form").then((response) => {
+    setData(response.data);
+  });
   return (
     <div>
       <div className="lg:hidden">
@@ -49,9 +54,17 @@ function HomePage() {
             <p>At The Moment</p>
           </div> */}
             <div className="flex flex-wrap justify-start">
+              {/* <PublicFormThumbnail />
               <PublicFormThumbnail />
-              <PublicFormThumbnail />
-              <PublicFormThumbnail />
+              <PublicFormThumbnail /> */}
+              {data.map((item) => {
+                return (
+                  <PublicFormThumbnail
+                    title={item.information.title}
+                    author={item.information.createdBy}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
@@ -96,9 +109,17 @@ function HomePage() {
                No Public Forms <br></br> At The Moment
               </h1>*/}
               <div className="flex flex-wrap justify-start w-[100%]">
+                {/* <PublicFormThumbnail />
                 <PublicFormThumbnail />
-                <PublicFormThumbnail />
-                <PublicFormThumbnail />
+                <PublicFormThumbnail /> */}
+                {data.map((item) => {
+                  return (
+                    <PublicFormThumbnail
+                      title={item.information.title}
+                      author={item.information.createdBy}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
