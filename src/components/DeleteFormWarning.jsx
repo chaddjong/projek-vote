@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Close from "../img/close.svg";
 
 export default function DeleteFormWarning({ closeModal }) {
-  const [modal, setModal] = useState(true);
+  // const [modal, setModal] = useState(true);
 
   return (
     <div className="flex flex-col bg-white w-[90vw] h-max rounded-[11px]">

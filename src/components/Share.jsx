@@ -42,20 +42,20 @@ export default function Share({ closeModal }) {
               type="radio"
               value="private"
               name="form"
-              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw] lg:w-[2vw] lg:h-[2vw] lg:ml-[3vw]"
+              className="mr-[2vw] w-[3vw] h-[3vw] md:w-[2vw] md:h-[2vw]"
               checked
             />
             <span className="text-[4.5vw] md:text-[3vw] font-semibold">
               Private Form
             </span>
-            <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw] lg:ml-[9vw] lg:w-[62.5%]">
+            <p className="text-[3.5vw] md:text-[2.5vw] ml-[6vw]">
               Private forms will not be shown at Home Menu, instead user can
               find it by entering Token number by sharing it
             </p>
           </label>
         </div>
         <div className="w-[100%] flex flex-col items-center justify-end mt-5">
-          <div class="w-[60vw] lg:w-[50vw] bg-[#EBEBEB] rounded-full py-[1vw] flex items-center">
+          <div class="w-[60vw] bg-[#d9d9d9] rounded-full py-[1vw] flex items-center">
             <img
               src={Clock}
               className="p-[1.5vw] bg-white rounded-full ml-2 w-[15%] h-[15%] "
@@ -63,7 +63,7 @@ export default function Share({ closeModal }) {
             <div class="w-[60%] ml-[4%] ">
               <select
                 id="share-period"
-                className="text-[3vw] md:text-[2.5vw] w-[60%]  bg-[#D9D9D9] flex flex-col justify-center items-start"
+                className="text-[3vw] md:text-[2.5vw] w-[100%]  bg-[#D9D9D9]"
               >
                 <option value="oneweek" selected className="lg:text-[1vw]">
                   One Week

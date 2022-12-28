@@ -6,8 +6,8 @@ import axios from "axios";
 
 function HomePage() {
   const [data, setData] = React.useState([]);
-  axios.get("http://localhost:4000/form").then((response) => {
-    setData(response.data);
+  axios.get("http://localhost:4000/form").then((res) => {
+    setData(res.data);
   });
   return (
     <div>
@@ -54,9 +54,7 @@ function HomePage() {
             <p>At The Moment</p>
           </div> */}
             <div className="flex flex-wrap justify-start">
-              {/* <PublicFormThumbnail />
-              <PublicFormThumbnail />
-              <PublicFormThumbnail /> */}
+              {/* <PublicFormThumbnail /> */}
               {data.map((item) => {
                 return (
                   <PublicFormThumbnail

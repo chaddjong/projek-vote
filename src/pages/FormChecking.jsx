@@ -6,12 +6,11 @@ import ReportThumbnail from "../components/ReportThumbnail";
 export default function FormChecking() {
 
   return (
+    // mobile layout 
     <div className="flex flex-col h-screen">
-      <div className="flex justify-start mt-[39px] ml-[10px] pb-[10px]">
-        <Link to={"/home"}>
-          <button>
-            <img src={BackArrow} className="w-[10vw] h-[10vw]" />
-          </button>
+      <div className="flex justify-start mt-[39px] ml-[11px] pb-[10px]">
+        <Link to={"/home"}  className="w-[10vw] h-[10vw]" >
+            <img src={BackArrow}/>
         </Link>
       </div>
       <div className="flex flex-col justify-start items-center h-screen">
@@ -20,12 +19,6 @@ export default function FormChecking() {
           <p>Any Forms Yet</p>
         </div> */}
         <div>
-          <ReportThumbnail />
-          <ReportThumbnail />
-          <ReportThumbnail />
-          <ReportThumbnail />
-          <ReportThumbnail />
-          <ReportThumbnail />
           <ReportThumbnail />
         </div>
       </div>
