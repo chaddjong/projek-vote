@@ -45,7 +45,7 @@ function LoginPage() {
               <Link to={"/home"}>
                 <button
                   id="btn_Log"
-                  class="h-[7vh] px-20 bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300 text-2xl active:bg-orange-400 font-semibold"
+                  class="px-[5vw] py-[2vh]  bg-[#D9D9D9] rounded-[15px] font-inter hover:bg-orange-300 text-2xl active:bg-orange-400 font-semibold shadow-sm shadow-black"
                 >
                   Login Here
                 </button>

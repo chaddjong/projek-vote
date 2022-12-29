@@ -21,17 +21,17 @@ function QuestionCard() {
   };
   console.log(val, "data-");
   return (
-    <div className="flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4 lg:mb-5">
+    <div className="flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4">
       <input
         id="question"
         placeholder="Untitled question"
-        className="border-black border-b-[1.46px] focus:outline-none placeholder-black text-xl pb-2 lg:text-1xl"
+        className="border-black border-b-[1.46px] focus:outline-none placeholder-black text-xl pb-2 lg:text-[2vw]"
         requiredhhin
       ></input>
       <div className="flex flex-start mt-[1em] ml-[0.5em] mb-4">
         <button
           type="file"
-          className="text-[3vw] bg-[#D9D9D9] px-[8px] py-[6px] rounded-[5px] lg:text-[16px] sm:text-[18px] md:text-[20px]"
+          className="text-[3vw] bg-[#D9D9D9] px-[8px] py-[6px] rounded-[5px] lg:text-[1.5vw] sm:text-[18px] md:text-[20px]"
         >
           <input
             type="file"
@@ -59,7 +59,7 @@ function QuestionCard() {
       })}
       <button
         onClick={() => handleAdd()}
-        className="flex w-max text-[#898989] ml-1 lg:text-xl"
+        className="flex w-max text-[#898989] ml-1 lg:text-[1.5vw]"
       >
         add option
       </button>

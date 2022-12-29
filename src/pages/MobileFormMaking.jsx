@@ -65,16 +65,19 @@ function MobileFormMaking() {
             </div>
             <div className="mt-5 ml-5 lg:mt-8">
               <input
+                type="text"
                 placeholder="Untitled form"
-                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-[2vw]"
+                className="text-black placeholder:text-black placeholder:font-normal w-[95%] text-4xl focus:outline-none lg:text-[3vw]"
               ></input>
               <br></br>
               <input
+                type="text"
                 placeholder="add a description"
-                className="placeholder:text-black placeholder:font-normal placeholder:opacity-50 text-base leading-6 focus:outline-none ml-1 w-[95%] lg:text-[1vw]"
+                className="placeholder:text-black placeholder:font-normal placeholder:opacity-50 text-base leading-6 focus:outline-none ml-1 w-[95%] lg:text-[1.5vw]"
               ></input>
             </div>
           </div>
+          <QuestionCard />
           {val.map((data, i) => {
             return (
               <div className="flex flex-col w-[100%] justify-start items-center">
@@ -87,7 +90,7 @@ function MobileFormMaking() {
               </div>
             );
           })}
-          <div class="bg-white  w-[97%] lg:w-[29%] h-[18vh] rounded-2xl flex flex-col justify-center items-center">
+          <div class="bg-white  w-[97%] lg:w-[29%] h-[18vh] rounded-2xl flex flex-col justify-center items-center lg:mt-5">
             <button
               id="btn_add"
               onClick={() => handleAdd()}

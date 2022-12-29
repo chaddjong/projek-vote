@@ -71,23 +71,25 @@ function HomePage() {
         <div className="flex flex-col justify-center items-center">
           <div class="flex justify-start items-start h-[100vh] w-[100%]">
             <div class="flex flex-col justify-evenly items-center h-[100%] w-[50%]">
-              <h1 class="font-inter text-5xl text-center text-[#434343]">
+              <h1 class="font-inter text-[3.5vw] text-center text-[#434343]">
                 WELCOME BACK <br></br> USER
               </h1>
-              <Link to={"/form-making"} class="h-[18vh] w-[80%]">
+              <Link to={"/form-making"}>
                 <button
                   id="btn_Crt"
-                  class="h-[18vh] w-[100%] bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
+                  class="h-[20vh] w-[28vw] shadow-sm shadow-black bg-[#D9D9D9] rounded-md font-inter text-[24px] hover:bg-orange-300 active:bg-orange-400"
                 >
                   Create Form
                 </button>
               </Link>
-              <button
-                id="btn_SeeForm"
-                class="h-[18vh] w-[80%]  bg-[#D9D9D9] rounded-md font-inter text-[24px] text-center hover:bg-orange-300 active:bg-orange-400"
-              >
-                See Form <br></br> Responds
-              </button>
+              <Link to={"/form-checking"}>
+                <button
+                  id="btn_SeeForm"
+                  class="h-[20vh] w-[28vw] shadow-sm shadow-black  bg-[#D9D9D9] rounded-md font-inter text-[24px] text-center hover:bg-orange-300 active:bg-orange-400"
+                >
+                  See Form <br></br> Responds
+                </button>
+              </Link>
             </div>
             <div class="flex flex-col justify-start items-center h-[100%] w-[50%] rounded-l-3xl bg-[#FFFFFF] shadow-2xl shadow-[#00000040]">
               <form class="h-[8vh] w-[80%] flex justify-center items-center border-[1px] border-[#000000] rounded-xl  mt-8">
