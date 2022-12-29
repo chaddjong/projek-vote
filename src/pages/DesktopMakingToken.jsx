@@ -34,9 +34,13 @@ export default function MakingToken() {
           <button className="h-[8vh] w-[14%] bg-[#D9D9D9] rounded-lg mt-5">
             Copy
           </button>
-          <Link to={"/home"} className="mt-5">
-            tap here to return to home page
-          </Link>
+          <div>
+            <Link to="/home">
+              <button className="mt-5 w-auto h-auto">
+                tap here to return to home page
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
