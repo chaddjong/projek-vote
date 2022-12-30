@@ -24,6 +24,26 @@ export default function MakingToken() {
           </a>
         </div>
       </div>
+      <div className="h-[100vh] w-[100%] flex flex-col justify-evenly items-center lg:hidden">
+        <div className="h-[70vh] w-[100%]  flex flex-col justify-evenly items-center">
+          <p className="h-[30vh] w-[50%] text-center lg:text-4xl sm:text-3xl font-semibold text-[#434343]">
+            YOUR FORM <br /> HAS SUCCESFULLY BEEN MADE
+          </p>
+          <p className="font-semibold text-[#434343] lg:text-4xl sm:text-3xl mt-[100px]">
+            009876ZX
+          </p>
+          <button className="h-[8vh] w-[14%] bg-[#D9D9D9] rounded-lg mt-5">
+            Copy
+          </button>
+          <div>
+            <Link to="/home">
+              <button className="mt-5 w-auto h-auto">
+                tap here to return to home page
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* mobile layout */}
       <div className="h-[100vh] w-[100%] flex flex-col justify-center items-center lg:hidden">
@@ -38,7 +58,10 @@ export default function MakingToken() {
           <p>Copy this token and share it with your</p>
           <p>friends and see their responses</p>
         </div>
-        <Link to={"/home"} className="opacity-50 font-semibold mt-[10vh] mb-[5vh]">
+        <Link
+          to={"/home"}
+          className="opacity-50 font-semibold mt-[10vh] mb-[5vh]"
+        >
           <p>Tap here to return to home menu</p>
         </Link>
       </div>

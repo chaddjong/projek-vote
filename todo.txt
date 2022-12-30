@@ -1,9 +1,13 @@
--slicing lagi asw
--conditional rendering
--media query
--tambah gambar
--tambah option 
--tambaah card
--konsul dengan richard
+list Data-data yang mau dipakai:
+-expired date
+-title
+-description
+-title question
+-image
+-option
+-option image
+-token
+-
+
 
 	
