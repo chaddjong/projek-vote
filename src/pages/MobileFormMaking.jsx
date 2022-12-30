@@ -33,7 +33,7 @@ function MobileFormMaking() {
   };
   console.log(val, "data-");
   return (
-    <body className="bg-[#D9D9D9] pb-5 body-back">
+    <body className="min-h-screen bg-[#D9D9D9] pb-5 body-back">
       <div className="flex justify-end items-end w-[100%] h-[100%]">
         <div class="mr-20 lg:hidden">
           <button
