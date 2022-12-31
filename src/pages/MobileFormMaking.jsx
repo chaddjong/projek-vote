@@ -12,10 +12,6 @@ import { Link } from "react-router-dom";
 function MobileFormMaking() {
   const [openmodal, setOpenModal] = useState(false);
 
-  // const toggleModal = () => {
-  //   setModal(!openmodal);
-  // };
-
   const [val, setVal] = useState([]);
   const handleAdd = () => {
     const abc = [...val, []];
@@ -33,7 +29,7 @@ function MobileFormMaking() {
   };
   console.log(val, "data-");
   return (
-    <body className="min-h-screen bg-[#D9D9D9] pb-5 body-back">
+    <body className="min-h-screen bg-[#D9D9D9] pb-5">
       <div className="flex justify-end items-end w-[100%] h-[100%]">
         <div class="mr-20 lg:hidden">
           <button

@@ -65,9 +65,32 @@ function QuestionCard() {
           add option
         </button>
       </div>
-      <div className="lg:hidden bg-white w-[97vw] h-max rounded-2xl flex flex-col">
-        <p>test</p>
-        <p>test</p>
+
+      {/* mobile layout */}
+      <div className="lg:hidden bg-white w-[97vw] h-max rounded-[11px] flex flex-col">
+        <div className="flex flex-col mt-[3.5vh] ml-[3vw] mb-[2vh]">
+          <input
+            id="question"
+            placeholder="Untitled Question"
+            className="border-black border-b-[2px] focus:outline-none placeholder-[#898989] text-[6vw] pb-[0.5vh] w-[90vw]"
+          ></input>
+          <button
+            type="file"
+            className="bg-[#64ACFF] w-[22.5vw] h-[5vh] text-[3vw] text-white mt-[3vh] ml-[3vw] rounded-[6px]"
+          >
+            <input
+              type="file"
+              id="file"
+              className="w-auto h-auto hidden"
+              accept="image/*"
+            />
+            <label for="file">Add image</label>
+          </button>
+        </div>
+        <div>
+          <Option />
+        </div>
+        <button className="mr-[65vw] text-[#898989] mb-[2vh]">add option</button>
       </div>
     </body>
   );
