@@ -21,7 +21,7 @@ export default function Option() {
       </div>
 
       {/* mobile layout */}
-      <div className="lg:hidden flex flex-row justify-start items-center h-max ml-[6vw] mb-[2.5vh]">
+      <div className="lg:hidden flex flex-row justify-start items-center h-max ml-[6vw] mb-[2.5vh] mt-[2.5vh]">
         <input
           type="radio"
           id="option"
@@ -33,10 +33,10 @@ export default function Option() {
           <input
             type="text"
             placeholder="option"
-            className="placeholder:text-[#898989] focus:w-[50vw] text-[4.5vw]"
+            className="placeholder:text-[#898989] focus:w-[50vw] text-[4.5vw] focus:outline-none"
           ></input>
         </label>
-        <div className="flex flex-row gap-[10vw]">
+        <div className="flex flex-row gap-[7.5vw]">
           <img src={AddPhoto} />
           <img src={Delete} />
         </div>
