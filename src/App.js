@@ -10,20 +10,23 @@ import Success from "./pages/ResponseSuccess";
 import Warning from "./pages/ResponseWarning";
 import Dashboard from "./pages/Dashboard";
 import FormChecking from "./pages/FormChecking";
+import Voting from "./pages/Voting";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/form-making" element={<MobileFormMaking />} />
-        <Route path="/form-checking" element={<FormChecking />} />
-        <Route path="/making-token" element={<MakingToken />} />
-        <Route path="/dashboard-report" element={<Dashboard />} />
-        <Route path="/response-confirmation" element={<Success />} />
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     {/* <Route path="/" element={<LoginPage />} />
+    //     <Route path="/home" element={<HomePage />} />
+    //     <Route path="/form-making" element={<MobileFormMaking />} />
+    //     <Route path="/form-checking" element={<FormChecking />} />
+    //     <Route path="/making-token" element={<MakingToken />} />
+    //     <Route path="/dashboard-report" element={<Dashboard />} />
+    //     <Route path="/response-confirmation" element={<Success />} /> */}
+
+    //   </Routes>
+    // </BrowserRouter>
+    <Voting />
   );
 }
 

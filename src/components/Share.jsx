@@ -58,7 +58,7 @@ export default function Share({ closeModal }) {
           <div class="w-[60vw] lg:w-[40vw] bg-[#d9d9d9] rounded-full py-[1vw] flex items-center lg:h-[10vh] xl:w-[27vw] xl:h-[7vh]">
             <img
               src={Clock}
-              className="p-[1.5vw] bg-white rounded-full ml-2 w-[15%] h-[15%]  lg:w-[5vw] lg:h-[8vh] lg:ml-[15px] xl:w-[3vw] xl:h-[6vh] xl:p-0"
+              className="p-[1vw] bg-white rounded-full ml-2 w-[15%] h-[15%]  lg:w-[50px] lg:h-[50px] lg:ml-[15px] xl:w-[45px] xl:h-[45px] xl:p-[0.5vw]"
             />
             <div class="w-[60%] ml-[4%] ">
               <select

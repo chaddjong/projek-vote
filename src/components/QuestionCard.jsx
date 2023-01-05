@@ -22,7 +22,7 @@ function QuestionCard() {
   console.log(val, "data-");
   return (
     <body>
-      <div className="max-[1023px]:hidden flex flex-col bg-white w-[97%] lg:w-[29%] h-max rounded-xl p-4">
+      <div className="max-[1023px]:hidden flex flex-col bg-white w-[97%] lg:w-[100%] h-max rounded-xl p-4">
         <input
           id="question"
           placeholder="Untitled question"
@@ -90,7 +90,9 @@ function QuestionCard() {
         <div>
           <Option />
         </div>
-        <button className="mr-[65vw] text-[#898989] mb-[2vh]">add option</button>
+        <button className="mr-[65vw] text-[#898989] mb-[2vh]">
+          add option
+        </button>
       </div>
     </body>
   );

@@ -1,13 +1,7 @@
 list Data-data yang mau dipakai:
--expired date
--title
--description
--title question
--image
--option
--option image
--token
--
+-page vote
+-get
+-create vote
 
 
 	
