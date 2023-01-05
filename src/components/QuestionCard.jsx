@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Option from "../components/Option";
 import Close from "../img/close.svg";
 import AddPhoto from "../img/addphoto.svg";
+import Delete from "../img/delete.svg";
 
 function QuestionCard() {
   const [val, setVal] = useState([]);
@@ -67,7 +68,10 @@ function QuestionCard() {
       </div>
 
       {/* mobile layout */}
-      <div className="lg:hidden bg-white w-[97vw] h-max rounded-[11px] flex flex-col">
+      <div className=" relative lg:hidden bg-white w-[97vw] h-max rounded-[11px] flex flex-col">
+        <button className="absolute right-[5vw] top-[5vw]">
+          <img className="w-[5.5vw]" src={Delete} />
+        </button>
         <div className="flex flex-col mt-[3.5vh] ml-[3vw] mb-[2vh]">
           <input
             id="question"
