@@ -44,7 +44,7 @@ function HomePage() {
             </p>
           </button>
         </div>
-        <div className="bg-[#68a1e6] w-[98%] h-screen mt-[50px] rounded-t-[6px] px-3 py-5 flex flex-row justify-between flex-wrap gap-y-6">
+        <div className="bg-[#68a1e6] w-[98%] h-screen mt-[50px] rounded-t-[6px] px-3 py-5 flex flex-row justify-between flex-wrap">
           {data.map((item) => {
             return (
               <PublicFormThumbnail
