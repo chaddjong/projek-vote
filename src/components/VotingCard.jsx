@@ -2,7 +2,7 @@ import React from "react";
 import OptionVote from "../components/OptionVote";
 export default function Card() {
   return (
-    <div className="w-[29%] h-auto pb-2 bg-white rounded-xl flex flex-col">
+    <div className="w-[29%] max-[1023px]:w-[95%] max-[1023px]:mt-4 h-auto pb-2 bg-white rounded-xl flex flex-col">
       <p className="mt-2 font-inter text-[#000000] ml-[5%] w-[90%]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
         recusandae deserunt assumenda iusto animi est officia. Excepturi
