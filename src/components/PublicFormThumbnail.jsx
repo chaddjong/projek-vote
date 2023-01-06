@@ -38,10 +38,10 @@ export default function PublicFormThumbnail(props) {
             </p>
           </div>
           <p className="text-start text-[5vw] pl-[2.5vw] text-[#2F76FF] font-bold">
-            {title}
+            {title.substring(0, 20)}...
           </p>
           <p className="text-start text-[3vw] pl-[2.5vw] text-[#2F76FF] font-bold">
-            {author}
+            {author.substring(0,30)}...
           </p>
         </button>
       </div>
