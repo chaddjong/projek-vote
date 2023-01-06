@@ -33,7 +33,7 @@ export default function Voting() {
 
   return (
     <body className="bg-[#D9D9D9] h-full pb-4">
-      <div className="flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center max-[1023px]:hidden">
         <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-5 lg:h-auto lg:pb-4">
           <div>
             {/* <Link to="/home"> */}
@@ -50,6 +50,11 @@ export default function Voting() {
             Submit
           </button>
         </div>
+      </div>
+
+      {/* mobile layout */}
+      <div className="lg:hidden">
+        test
       </div>
     </body>
   );
