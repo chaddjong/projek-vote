@@ -30,7 +30,7 @@ export default function Voting() {
           </div>
           <div className="mt-5 ml-5 lg:mt-8">
             <p className=" text-black font-normal w-[95%] text-4xl focus:outline-none lg:text-[3vw]">
-              {data.information.title}
+              {data.title}
             </p>
             <br></br>
             <p className="text-black font-normal opacity-50 text-base leading-6 focus:outline-none ml-1 w-[95%] lg:text-[1.5vw]">
@@ -47,9 +47,7 @@ export default function Voting() {
       </div>
 
       {/* mobile layout */}
-      <div className="lg:hidden">
-        test
-      </div>
+      <div className="lg:hidden">test</div>
     </body>
   );
 }

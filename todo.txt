@@ -1,7 +1,13 @@
 list Data-data yang mau dipakai:
--page vote
--get
--create vote
-
+-layout publicthumbnail(-)
+-token input(link to voting)(-)
+-indexing card (mobile form making)(-)
+-add picture (mobile form making)
+-post axios (share page)(-)
+-random token (token form)(-)
+-get api (voting)
+-if already finish voting(-)
+-dash board card
+-information card
 
 	
