@@ -97,10 +97,7 @@ function HomePage() {
               {/* <h1 class="text-[25px] font-normal my-auto mx-auto opacity-30 font-inter"> 
                No Public Forms <br></br> At The Moment
               </h1>*/}
-              <div className="flex flex-wrap justify-start w-[100%]">
-                {/* <PublicFormThumbnail />
-                <PublicFormThumbnail />
-                <PublicFormThumbnail /> */}
+              <div className="flex flex-wrap justify-evenly w-[100%]">
                 {data.map((item) => {
                   return (
                     <PublicFormThumbnail
