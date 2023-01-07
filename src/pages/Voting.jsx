@@ -4,6 +4,7 @@ import BackArrow from "../img/arrow_back.svg";
 import VotingCard from "../components/VotingCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
+
 export default function Voting() {
   const [data, setData] = useState([null]);
 
@@ -47,9 +48,7 @@ export default function Voting() {
       </div>
 
       {/* mobile layout */}
-      <div className="lg:hidden">
-        test
-      </div>
+      <div className="lg:hidden">test</div>
     </body>
   );
 }

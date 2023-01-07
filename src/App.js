@@ -23,6 +23,7 @@ function App() {
         <Route path="/making-token" element={<MakingToken />} />
         <Route path="/dashboard-report" element={<Dashboard />} />
         <Route path="/response-confirmation" element={<Success />} />
+        <Route path="/form-voting" element={<Voting />} />
       </Routes>
     </BrowserRouter>
     // <Voting />
