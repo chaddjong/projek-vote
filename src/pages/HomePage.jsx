@@ -29,20 +29,24 @@ function HomePage() {
           </button>
         </div>
         <div className="flex flex-row gap-[5vw] mt-[3vh]">
-          <button className="bg-[#216CFF] w-[42.5vw] rounded-2xl py-[2vh]">
-            <p className="text-center text-white text-[5vw] font-extrabold tracking-widest">
-              See Form
-              <br />
-              Responds
-            </p>
-          </button>
-          <button className="bg-[#216CFF] w-[42.5vw] rounded-2xl py-[2vh]">
-            <p className="text-center text-white text-[5vw] font-extrabold tracking-widest">
-              Create
-              <br />
-              Form
-            </p>
-          </button>
+          <Link to={"/form-checking"}>
+            <button className="bg-[#216CFF] w-[42.5vw] rounded-2xl py-[2vh]">
+              <p className="text-center text-white text-[5vw] font-extrabold tracking-widest">
+                See Form
+                <br />
+                Responds
+              </p>
+            </button>
+          </Link>
+          <Link to={"/form-making"}>
+            <button className="bg-[#216CFF] w-[42.5vw] rounded-2xl py-[2vh]">
+              <p className="text-center text-white text-[5vw] font-extrabold tracking-widest">
+                Create
+                <br />
+                Form
+              </p>
+            </button>
+          </Link>
         </div>
         <div className="bg-[#68a1e6] w-[98%] h-screen mt-[50px] rounded-t-[6px] px-3 py-5 flex flex-row justify-between flex-wrap">
           {data.map((item) => {

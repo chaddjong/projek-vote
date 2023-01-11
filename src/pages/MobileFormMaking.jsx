@@ -50,7 +50,8 @@ function MobileFormMaking() {
         </div>
       </div>
       <div>
-        <div className="flex flex-col justify-center items-center max-[1023px]:gap-5">
+        {/* mobile layout */}
+        <div className="flex flex-col justify-center items-center max-[1023px]:gap-5 lg:hidden">
           <div className=" bg-white w-full lg:w-[30%] h-44 rounded-b-2xl lg:mb-5">
             <div>
               <Link to="/home">

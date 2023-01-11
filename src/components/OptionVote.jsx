@@ -23,7 +23,9 @@ export default function Option() {
           option
         </label>
       </div>
-      <div className="lg:hidden flex flex-row justify-start items-center h-max ml-[6vw] mb-[2.5vh]">
+
+      {/* mobile layout */}
+      <div className="lg:hidden flex flex-row justify-start items-center h-max ml-[2vw] mb-[2.5vh]">
         <input
           type="radio"
           id="option"
