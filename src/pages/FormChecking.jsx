@@ -24,7 +24,7 @@ export default function FormChecking() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center w-[50%] h-auto pb-4 bg-[#FFFFFF] shadow-[0_35px_60px_-15px_rgba(0, 0, 0, 0.25)] shadow-lg rounded-l-lg max-[1023px]:hidden">
+        <div className="flex flex-col items-center w-[50%] h-auto pb-4 bg-[#FFFFFF] shadow-[0_35px_60px_-15px_rgba(0, 0, 0, 0.25)] shadow-lg rounded-l-lg max-[1023px]:hidden overflow-scroll">
           <div className="flex flex-col bg-[#FFFFFF] w-[80%] h-auto p-4 shadow-md shadow-black rounded-lg mt-2">
             <p className="text-[#000000] opacity-[50%] text-[10px] flex self-end">
               Form will expire in xxx
